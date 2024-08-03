@@ -11,7 +11,7 @@ export interface UserPrefs{
 }
 
 interface IAuthStore {
-    session: Models.Session | null;
+    session: Models.Session | null; //given by appwrite
     jwt: string | null
     user: Models.User<UserPrefs> | null
     hydrated: boolean
