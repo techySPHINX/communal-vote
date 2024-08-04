@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
                 db,
                 type === "question" ? questionCollection : answerCollection,
                 typeId
-            );
+            ); // question from which db
 
             const authorPrefs = await users.getPrefs<UserPrefs>(questionOrAnswer.authorId);
 
